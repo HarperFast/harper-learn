@@ -1,0 +1,94 @@
+name: Episode Feedback
+description: Share your thoughts on a published episode
+title: "[Feedback] Week XX - "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to share your feedback! Your input helps shape future episodes and improves the learning experience for everyone.
+
+  - type: dropdown
+    id: episode
+    attributes:
+      label: Which episode is this feedback for?
+      description: Select the week/episode you're providing feedback on
+      options:
+        - Week 01 - Getting Started with Harper
+        - Week 02
+        - Week 03
+        - Week 04
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Overall Rating
+      description: How would you rate this episode?
+      options:
+        - "5 - Excellent, very helpful"
+        - "4 - Good, learned something useful"
+        - "3 - Okay, some useful content"
+        - "2 - Below expectations"
+        - "1 - Not helpful"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-worked
+    attributes:
+      label: What worked well?
+      description: What did you find particularly helpful or well-explained?
+      placeholder: "The step-by-step installation walkthrough was clear and easy to follow..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-could-improve
+    attributes:
+      label: What could be improved?
+      description: What was confusing, missing, or could be explained better?
+      placeholder: "I would have liked more explanation about why we connect to Fabric..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-issues
+    attributes:
+      label: Technical Issues (if any)
+      description: Did you encounter any problems following along? Include error messages if applicable.
+      placeholder: "When I ran 'harper --version', I got an error..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: Your Experience Level
+      description: This helps me understand if the content matches the target audience
+      options:
+        - "Beginner - New to Harper and similar platforms"
+        - "Intermediate - Some experience with distributed systems"
+        - "Advanced - Experienced with Harper or similar platforms"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-comments
+    attributes:
+      label: Additional Comments
+      description: Anything else you'd like to share?
+      placeholder: "I'd love to see more about..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: discord
+    attributes:
+      label: Join the Discussion
+      description: Want to discuss this feedback in real-time?
+      options:
+        - label: I'd like to discuss this further on Discord
+          required: false

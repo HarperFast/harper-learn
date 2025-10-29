@@ -1,0 +1,109 @@
+name: Topic Request
+description: Suggest a topic for a future episode
+title: "[Topic] "
+labels: ["topic-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a future episode? I'd love to hear it! Community input directly shapes the series roadmap.
+
+  - type: input
+    id: topic-title
+    attributes:
+      label: Topic Title
+      description: A short, descriptive title for the topic
+      placeholder: "Working with Harper's Data Pipeline API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic-description
+    attributes:
+      label: Topic Description
+      description: What would you like to see covered? Be as specific as possible.
+      placeholder: |
+        I'd like to learn how to build a data pipeline that processes real-time events using Harper. Specifically:
+        - Setting up a pipeline
+        - Handling streaming data
+        - Error handling and retries
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Suggested Difficulty Level
+      description: What skill level should this topic target?
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - "Not sure"
+    validations:
+      required: false
+
+  - type: textarea
+    id: why-important
+    attributes:
+      label: Why is this topic important?
+      description: What problem would this help solve? Why would this be valuable to learn?
+      placeholder: "This would help me understand how to build production-ready data processing systems with Harper..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Your Use Case (Optional)
+      description: Are you trying to solve a specific problem or build something particular?
+      placeholder: "I'm building a system that needs to process logs from multiple sources..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How valuable would this be to you?
+      description: This helps me prioritize topics
+      options:
+        - "Critical - I need this for a current project"
+        - "High - Would be very useful soon"
+        - "Medium - Interested in learning this"
+        - "Low - Nice to have eventually"
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Related Resources (Optional)
+      description: Any documentation, articles, or examples related to this topic?
+      placeholder: |
+        - Harper docs: https://...
+        - Related blog post: https://...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: willing-to-help
+    attributes:
+      label: Collaboration
+      description: Would you be interested in helping research or test this topic?
+      options:
+        - "Yes - I'd love to help!"
+        - "Maybe - Depends on the details"
+        - "No - Just suggesting the idea"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      description: Please confirm before submitting
+      options:
+        - label: I've checked that this topic hasn't already been covered or requested
+          required: true
+        - label: I understand this is a suggestion and may not be covered immediately
+          required: true
