@@ -1,6 +1,6 @@
 # Week 01: Getting Started with Harper
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Beginner
+**Published:** October 31, 2025 • **Duration:** ~10 minutes • **Difficulty:** Beginner
 
 ---
 
@@ -76,7 +76,7 @@ Welcome to the first episode of Harper Learn! In this focused session, we go fro
 
 ## Discussion & Feedback
 
-**Quick questions?** Join the [Discord](https://discord.gg/your-invite) for real-time help
+**Quick questions?** Join the [Discord](https://discord.gg/89sbtZTd) for real-time help
 **Episode feedback?** [Submit via GitHub](../../issues/new?template=feedback.yml)
 **Topic suggestions?** [Request a topic](../../issues/new?template=topic-request.yml)
 
@@ -88,6 +88,6 @@ Welcome to the first episode of Harper Learn! In this focused session, we go fro
 
 <div align="center">
 
-Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/your-invite)
+Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/89sbtZTd)
 
 </div>

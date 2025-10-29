@@ -59,7 +59,7 @@ This week we explore the difference between local and remote Harper deployments,
 - [Harper Build Configuration](https://harper.example.com/docs/builds)
 
 **Community:**
-- [Discord Community](https://discord.gg/your-invite)
+- [Discord Community](https://discord.gg/89sbtZTd)
 - [GitHub Repository](https://github.com/your-username/harper-learn)
 
 **Tools Used:**
@@ -79,7 +79,7 @@ This week we explore the difference between local and remote Harper deployments,
 
 ## Discussion & Feedback
 
-**Quick questions?** Join the [Discord](https://discord.gg/your-invite) for real-time help
+**Quick questions?** Join the [Discord](https://discord.gg/89sbtZTd) for real-time help
 **Episode feedback?** [Submit via GitHub](../../issues/new?template=feedback.yml)
 **Topic suggestions?** [Request a topic](../../issues/new?template=topic-request.yml)
 
@@ -91,6 +91,6 @@ This week we explore the difference between local and remote Harper deployments,
 
 <div align="center">
 
-Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/your-invite)
+Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/89sbtZTd)
 
 </div>

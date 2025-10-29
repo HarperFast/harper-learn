@@ -5,10 +5,10 @@
 <div align="center">
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@your-channel)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-invite)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/89sbtZTd)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 
-**[Watch on YouTube](https://youtube.com/@your-channel)** • **[Join Discord Community](https://discord.gg/your-invite)**
+**[Watch on YouTube](https://youtube.com/@your-channel)** • **[Join Discord Community](https://discord.gg/89sbtZTd)**
 
 </div>
 
@@ -31,7 +31,7 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 
 ## 💬 Join the Community
 
-Learning is better together! Join our **[Discord community](https://discord.gg/your-invite)** to:
+Learning is better together! Join our **[Discord community](https://discord.gg/89sbtZTd)** to:
 
 - 🎯 Ask questions and get real-time help
 - 🤝 Connect with other Harper learners
@@ -52,7 +52,7 @@ Have an idea for a future episode? Want to share feedback on what you've watched
 
 Browse all suggestions and vote on topics you'd like to see by checking out the **[Issues](../../issues)** page.
 
-> **Tip:** For quick questions or casual discussions, head to [Discord](https://discord.gg/your-invite). For structured feedback and topic requests, use GitHub Issues.
+> **Tip:** For quick questions or casual discussions, head to [Discord](https://discord.gg/89sbtZTd). For structured feedback and topic requests, use GitHub Issues.
 
 ---
 
@@ -77,6 +77,6 @@ This project is licensed under the Apache License 2.0 - see the LICENSE file for
 
 **Happy Learning!** 🚀
 
-*Don't forget to subscribe and join the Discord for the full experience.*
+*Don't forget to subscribe and join the [Discord](https://discord.gg/89sbtZTd) for the full experience.*
 
 </div>
