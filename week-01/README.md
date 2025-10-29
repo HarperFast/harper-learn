@@ -6,7 +6,7 @@
 
 ## 📺 Watch On
 
-- **[YouTube](https://youtube.com/watch?v=YOUR_VIDEO_ID)** — Primary platform
+- **[YouTube](https://www.youtube.com/watch?v=6hVRlghL9XA)** — Primary platform
 - **[Additional Platform]** — Coming soon
 
 ---
