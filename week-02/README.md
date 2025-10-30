@@ -1,4 +1,4 @@
-# Week 02: Installing from Source & Your First Static Site
+# Week 02: Installing Harper the Right Way & Your First Static Site
 
 **Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Beginner
 
@@ -13,7 +13,7 @@
 
 ## Overview
 
-This week we go deeper into Harper installation options and deploy our first static site. You'll learn the different ways to install Harper, then we'll install from source using the public GitHub repo. Finally, we'll deploy the simplest static site possible to get hands-on experience with Harper's deployment workflow.
+Three topics: the sudo vs NVM question, installing Harper from source, and deploying a static site.
 
 ---
 
@@ -21,19 +21,19 @@ This week we go deeper into Harper installation options and deploy our first sta
 
 **[0:00-0:30] Introduction**
 
-**[0:30-1:30] Harper Installation Options Overview**
+**[0:30-3:00] Segment 1: sudo vs NVM**
 
-**[1:30-4:30] Installing Harper from Source**
+**[3:00-5:30] Segment 2: Installing from Source**
 
-**[4:30-8:30] Deploying Your First Static Site**
+**[5:30-9:00] Segment 3: Deploying a Static Site**
 
-**[8:30-10:00] Wrap-up**
+**[9:00-10:00] Wrap-up**
 
 ---
 
 ## Key Learning Outcome
 
-✓ **Install Harper from source and deploy a static site** — Understand installation options and deploy your first application to Harper.
+✓ **Understand Harper installation options and deploy a static site** — NVM vs sudo, building from source, and basic deployment.
 
 ---
 
@@ -42,9 +42,9 @@ This week we go deeper into Harper installation options and deploy our first sta
 > *Will be added after video is published*
 
 - `00:00` — Introduction
-- `00:00` — Harper Installation Options Overview
-- `00:00` — Installing Harper from Source
-- `00:00` — Deploying Your First Static Site
+- `00:00` — Segment 1: sudo vs NVM
+- `00:00` — Segment 2: Installing from Source
+- `00:00` — Segment 3: Deploying a Static Site
 - `00:00` — Wrap-up
 
 ---
@@ -52,26 +52,24 @@ This week we go deeper into Harper installation options and deploy our first sta
 ## Resources & Links
 
 **Documentation:**
-- [Harper GitHub Repository](https://github.com/harper/harper)
-- [Harper Installation Guide](https://harper.example.com/docs/installation)
-- [Harper Deployment Guide](https://harper.example.com/docs/deployment)
+- [HarperDB Getting Started Guide](https://docs.harperdb.io/)
+- [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
+- [HarperDB GitHub Repository](https://github.com/HarperDB/harperdb)
 
 **Community:**
 - [Discord Community](https://discord.gg/89sbtZTd)
-- [GitHub Repository](https://github.com/your-username/harper-learn)
+- [GitHub Repository](https://github.com/HarperFast/harper-learn)
 
 **Tools Used:**
-- Git
-- Harper CLI
-- Text editor
+- NVM, npm, Git, HarperDB CLI
 
 ---
 
 ## Prerequisites
 
 - Completion of Week 01
+- Command-line familiarity
 - Git installed
-- Basic command-line familiarity
 
 ---
 

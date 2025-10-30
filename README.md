@@ -21,7 +21,7 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 | Week | Topic | Status | Watch |
 |------|-------|--------|-------|
 | [Week 01](./week-01/) | Getting Started with Harper | ![Published](https://img.shields.io/badge/status-published-success) | [YouTube](https://www.youtube.com/watch?v=6hVRlghL9XA) |
-| [Week 02](./week-02/) | Installing from Source & First Static Site | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
+| [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 | [Week 03](./week-03/) | Local vs Remote Deployments & Build Pipelines | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 | [Week 04](./week-04/) | TBD | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 
