@@ -22,10 +22,18 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 **[0:00-0:30] Introduction**
 
 **[0:30-3:00] Segment 1: sudo vs NVM**
+- Why sudo isn't usually needed: NVM installs Node in your user directory
+- The recommended installation path with NVM (no sudo required)
+- When sudo IS needed: system-wide Node installations (nodejs.org installer, Homebrew)
+- Bottom line: check how your Node was installed
 
 **[3:00-5:30] Segment 2: Installing from Source**
+- (Talking points to be added)
 
 **[5:30-9:00] Segment 3: Deploying a Static Site**
+- Deploy local
+- Deploy remote
+- Putting at a sub-url (urlPath)
 
 **[9:00-10:00] Wrap-up**
 
