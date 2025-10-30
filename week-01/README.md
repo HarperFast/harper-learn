@@ -88,6 +88,6 @@ Welcome to the first episode of Harper Learn! In this focused session, we go fro
 
 <div align="center">
 
-Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/89sbtZTd)
+Subscribe on [YouTube](https://www.youtube.com/@harper-fast) • Join the [Discord](https://discord.gg/89sbtZTd)
 
 </div>

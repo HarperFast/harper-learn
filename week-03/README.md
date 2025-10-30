@@ -91,6 +91,6 @@ This week we explore the difference between local and remote Harper deployments,
 
 <div align="center">
 
-Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/89sbtZTd)
+Subscribe on [YouTube](https://www.youtube.com/@harper-fast) • Join the [Discord](https://discord.gg/89sbtZTd)
 
 </div>

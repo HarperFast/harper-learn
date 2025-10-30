@@ -4,11 +4,11 @@
 
 <div align="center">
 
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@your-channel)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@harper-fast)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/89sbtZTd)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 
-**[Watch on YouTube](https://youtube.com/@your-channel)** • **[Join Discord Community](https://discord.gg/89sbtZTd)**
+**[Watch on YouTube](https://www.youtube.com/@harper-fast)** • **[Join Discord Community](https://discord.gg/89sbtZTd)**
 
 </div>
 

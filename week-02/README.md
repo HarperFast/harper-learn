@@ -95,6 +95,6 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 
 <div align="center">
 
-Subscribe on [YouTube](https://youtube.com/@your-channel) • Join the [Discord](https://discord.gg/89sbtZTd)
+Subscribe on [YouTube](https://www.youtube.com/@harper-fast) • Join the [Discord](https://discord.gg/89sbtZTd)
 
 </div>
