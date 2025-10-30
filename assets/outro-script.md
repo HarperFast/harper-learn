@@ -6,7 +6,7 @@ Use this template to close each episode with a consistent sign-off while encoura
 
 ## Standard Closing
 
-> "That's it for this week. There's fast, then there's Harper fast. Until next Friday."
+> "Big thanks to the Harper engineering team—especially Kyle and Kris—for building a platform that's this much fun to explore. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
 
 ---
 
@@ -44,13 +44,13 @@ Include one or more of these elements before the standard closing when appropria
 ## Full Example Outros
 
 **Standard (Minimal):**
-> "That's it for this week. There's fast, then there's Harper fast. Until next Friday."
+> "Big thanks to the Harper engineering team—especially Kyle and Kris—for building a platform that's this much fun to explore. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
 
 **With Engagement:**
-> "If you found this helpful, join the Discord community—we've got a growing group of Harper learners sharing projects and troubleshooting together. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
+> "If you found this helpful, join the Discord community—we've got a growing group of Harper learners sharing projects and troubleshooting together. Big thanks to the Harper engineering team—especially Kyle and Kris—for building a platform that's this much fun to explore. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
 
 **With Preview:**
-> "Next week, we're building on this foundation to explore cluster management in Fabric—so make sure Harper is installed and ready to go. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
+> "Next week, we're building on this foundation to explore cluster management in Fabric—so make sure Harper is installed and ready to go. Big thanks to the Harper engineering team—especially Kyle and Kris—for building a platform that's this much fun to explore. That's it for this week. There's fast, then there's Harper fast. Until next Friday."
 
 ---
 
