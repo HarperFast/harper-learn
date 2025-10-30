@@ -28,7 +28,9 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 - Bottom line: check how your Node was installed
 
 **[3:00-5:30] Segment 2: Installing from Source**
-- (Talking points to be added)
+- Grabbing from GitHub
+- Installing manually
+- Shell tools to make it easy
 
 **[5:30-9:00] Segment 3: Deploying a Static Site**
 - Deploy local
