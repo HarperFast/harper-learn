@@ -5,10 +5,10 @@
 <div align="center">
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@harper-fast)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/89sbtZTd)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/g2sUEECh)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 
-**[Watch on YouTube](https://www.youtube.com/@harper-fast)** • **[Join Discord Community](https://discord.gg/89sbtZTd)**
+**[Watch on YouTube](https://www.youtube.com/@harper-fast)** • **[Join Discord Community](https://discord.gg/g2sUEECh)**
 
 </div>
 
@@ -31,7 +31,7 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 
 ## 💬 Join the Community
 
-Learning is better together! Join our **[Discord community](https://discord.gg/89sbtZTd)** to:
+Learning is better together! Join our **[Discord community](https://discord.gg/g2sUEECh)** to:
 
 - 🎯 Ask questions and get real-time help
 - 🤝 Connect with other Harper learners
@@ -52,7 +52,7 @@ Have an idea for a future episode? Want to share feedback on what you've watched
 
 Browse all suggestions and vote on topics you'd like to see by checking out the **[Issues](../../issues)** page.
 
-> **Tip:** For quick questions or casual discussions, head to [Discord](https://discord.gg/89sbtZTd). For structured feedback and topic requests, use GitHub Issues.
+> **Tip:** For quick questions or casual discussions, head to [Discord](https://discord.gg/g2sUEECh). For structured feedback and topic requests, use GitHub Issues.
 
 ---
 
