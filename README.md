@@ -16,7 +16,7 @@
 
 ## 📺 Weekly Episodes
 
-Each week, I explore a new aspect of Harper through hands-on projects and real-world applications. Episodes are published every [day of week] at [time].
+Each week, I explore a new aspect of Harper through hands-on projects and real-world applications. Episodes are published every Friday morning.
 
 | Week | Topic | Status | Watch |
 |------|-------|--------|-------|
