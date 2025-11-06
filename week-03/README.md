@@ -13,7 +13,7 @@
 
 ## Overview
 
-This week we explore the difference between local and remote Harper deployments, then tackle a more realistic scenario: deploying a static site that requires a build step. You'll learn how to deploy the same application both locally and to Fabric, and understand when to use each approach.
+This week we dive deeper into practical Harper deployment workflows. We'll start with a quick review of managing Harper installations locally (nvm vs oh-my-zsh), then explore deploying a simple static app both locally and remotely. Finally, we'll tackle a more realistic scenario: deploying a Vue.js application that requires a build step.
 
 ---
 
@@ -21,21 +21,34 @@ This week we explore the difference between local and remote Harper deployments,
 
 **[0:00-0:30] Introduction**
 
-**[0:30-2:00] Local vs Remote Deployments**
+**[0:30-2:30] Managing Harper Installations Locally**
+- Quick review: nvm vs oh-my-zsh approaches
+- Best practices for local development environments
+- Switching between Harper versions
 
-**[2:00-4:00] Deploying Locally**
+**[2:30-5:00] Deploying a Simple Static App Locally**
+- Review of the simple static app from Week 02
+- Deploying to local Harper instance
+- Testing and verifying the deployment
 
-**[4:00-6:00] Deploying Remotely to Fabric**
+**[5:00-7:30] Deploying the Static App Remotely**
+- Same app, remote deployment to Fabric
+- Differences between local and remote workflows
+- Viewing the live deployment
 
-**[6:00-8:30] Deploying a Site with a Build Step**
+**[7:30-9:30] Building and Deploying a Vue.js App**
+- Introduction to apps with build steps
+- Running npm build locally
+- Deploying the built output to Harper
+- Common gotchas and troubleshooting
 
-**[8:30-10:00] Wrap-up**
+**[9:30-10:00] Wrap-up**
 
 ---
 
 ## Key Learning Outcome
 
-✓ **Deploy applications locally and remotely, including sites with build pipelines** — Understand deployment targets and handle real-world static site builds.
+✓ **Master local Harper management and deploy apps with build steps** — Learn to manage Harper installations effectively, deploy simple static apps both locally and remotely, and handle real-world applications with build pipelines like Vue.js.
 
 ---
 
@@ -44,10 +57,10 @@ This week we explore the difference between local and remote Harper deployments,
 > *Will be added after video is published*
 
 - `00:00` — Introduction
-- `00:00` — Local vs Remote Deployments
-- `00:00` — Deploying Locally
-- `00:00` — Deploying Remotely to Fabric
-- `00:00` — Deploying a Site with a Build Step
+- `00:00` — Managing Harper Installations Locally (nvm vs oh-my-zsh)
+- `00:00` — Deploying a Simple Static App Locally
+- `00:00` — Deploying the Static App Remotely to Fabric
+- `00:00` — Building and Deploying a Vue.js App
 - `00:00` — Wrap-up
 
 ---
@@ -57,6 +70,8 @@ This week we explore the difference between local and remote Harper deployments,
 **Documentation:**
 - [Harper Deployment Targets](https://harper.example.com/docs/deployment-targets)
 - [Harper Build Configuration](https://harper.example.com/docs/builds)
+- [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm)
+- [oh-my-zsh](https://ohmyz.sh/)
 
 **Community:**
 - [Discord Community](https://discord.gg/89sbtZTd)
@@ -64,16 +79,18 @@ This week we explore the difference between local and remote Harper deployments,
 
 **Tools Used:**
 - Harper CLI
-- Node.js (for build example)
-- Static site generator (e.g., Vite, Next.js, or similar)
+- Node.js & npm
+- Vue.js (for build step example)
+- nvm or oh-my-zsh (for version management)
 
 ---
 
 ## Prerequisites
 
 - Completion of Week 02
-- Understanding of basic build tools
-- Node.js installed (for build example)
+- Node.js installed locally
+- Basic familiarity with npm commands
+- Understanding of what a build step is (we'll cover this in detail)
 
 ---
 
