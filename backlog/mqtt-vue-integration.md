@@ -19,7 +19,7 @@ By the end, you'll have a working multi-client system where multiple users can s
 
 ## UI Preview
 
-![LED MQTT Sign Control Interface](assets/mqtt-ui.png)
+![LED MQTT Sign Control Interface](https://raw.githubusercontent.com/HarperFast/harper-learn/main/backlog/assets/mqtt-ui.png)
 
 ---
 
