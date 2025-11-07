@@ -17,6 +17,10 @@ This episode brings IoT into the mix by building a Vue.js application that contr
 
 By the end, you'll have a working multi-client system where multiple users can see and control the same LED sign in real-time.
 
+## UI Preview
+
+![LED MQTT Sign Control Interface](assets/mqtt-ui.png)
+
 ---
 
 ## Talk Track
