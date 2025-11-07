@@ -1,43 +1,29 @@
 # Week 02: Installing Harper the Right Way & Your First Static Site
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Beginner
+**Published:** 11/7/25 • **Duration:** 13 minutes • **Difficulty:** Beginner
 
 ---
 
 ## 📺 Watch On
 
-- **[YouTube](https://youtube.com/watch?v=VIDEO_ID)** — Primary platform
-- **[Additional Platform]** — Coming soon
+- **[YouTube](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)** — Primary platform
 
 ---
 
 ## Overview
 
-Three topics: the sudo vs NVM question, installing Harper from source, and deploying a static site.
+Ivan Judson, a solution architect at Harper, shares insights on managing local instances using Fabric and deploying basic applications. He demonstrates the installation of Harper using Node Version Manager and provides tips for managing local development environments. The session includes a walkthrough of deploying a simple static website and highlights the flexibility of Harper's platform.
 
 ---
 
 ## Talk Track
 
-**[0:00-0:30] Introduction**
-
-**[0:30-3:00] Segment 1: sudo vs NVM**
-- Why sudo isn't usually needed: NVM installs Node in your user directory
-- The recommended installation path with NVM (no sudo required)
-- When sudo IS needed: system-wide Node installations (nodejs.org installer, Homebrew)
-- Bottom line: check how your Node was installed
-
-**[3:00-5:30] Segment 2: Installing from Source**
-- Grabbing from GitHub
-- Installing manually
-- Shell tools to make it easy
-
-**[5:30-9:00] Segment 3: Deploying a Static Site**
-- Deploy local
-- Deploy remote
-- Putting at a sub-url (urlPath)
-
-**[9:00-10:00] Wrap-up**
+- 00:00 Introduction to Harper and Its Applications
+- 00:44 Installing Harper: Getting Started
+- 04:14 Managing Node Versions with NVM
+- 06:06 Building Harper from Source
+- 08:41 Deploying a Simple Static Website
+- 12:13 Conclusion and Future Plans
 
 ---
 
@@ -47,31 +33,19 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 
 ---
 
-## Timestamps
-
-> *Will be added after video is published*
-
-- `00:00` — Introduction
-- `00:00` — Segment 1: sudo vs NVM
-- `00:00` — Segment 2: Installing from Source
-- `00:00` — Segment 3: Deploying a Static Site
-- `00:00` — Wrap-up
-
----
-
 ## Resources & Links
 
 **Documentation:**
 - [HarperDB Getting Started Guide](https://docs.harperdb.io/)
 - [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
-- [HarperDB GitHub Repository](https://github.com/HarperDB/harperdb)
+- [Harper GitHub Repository](https://github.com/Harperfast/harper)
 
 **Community:**
-- [Discord Community](https://discord.gg/89sbtZTd)
+- [Discord Community](https://discord.gg/kfYmMTXc9b)
 - [GitHub Repository](https://github.com/HarperFast/harper-learn)
 
 **Tools Used:**
-- NVM, npm, Git, HarperDB CLI
+- NVM, npm, Git, Harper CLI
 
 ---
 
@@ -85,7 +59,7 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 
 ## Discussion & Feedback
 
-**Quick questions?** Join the [Discord](https://discord.gg/89sbtZTd) for real-time help
+**Quick questions?** Join the [Discord](https://discord.gg/kfYmMTXc9b) for real-time help
 **Episode feedback?** [Submit via GitHub](../../issues/new?template=feedback.yml)
 **Topic suggestions?** [Request a topic](../../issues/new?template=topic-request.yml)
 
@@ -97,6 +71,6 @@ Three topics: the sudo vs NVM question, installing Harper from source, and deplo
 
 <div align="center">
 
-Subscribe on [YouTube](https://www.youtube.com/@harper-fast) • Join the [Discord](https://discord.gg/89sbtZTd)
+Subscribe on [YouTube](https://www.youtube.com/@harper-fast) • Join the [Discord](https://discord.gg/kfYmMTXc9b)
 
 </div>
