@@ -4,11 +4,11 @@
 
 <div align="center">
 
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@harper-fast)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLlgTMTKsypS54JWvyNirmCmH8Szy4DrUJ)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/g2sUEECh)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 
-**[Watch on YouTube](https://www.youtube.com/@harper-fast)** • **[Join Discord Community](https://discord.gg/g2sUEECh)**
+**[Watch on YouTube](https://www.youtube.com/playlist?list=PLlgTMTKsypS54JWvyNirmCmH8Szy4DrUJ)** • **[Join Discord Community](https://discord.gg/g2sUEECh)**
 
 </div>
 
@@ -20,8 +20,8 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 
 | Week | Topic | Status | Watch |
 |------|-------|--------|-------|
-| [Week 01](./week-01/) | Getting Started with Harper | ![Published](https://img.shields.io/badge/status-published-success) | [YouTube](https://www.youtube.com/watch?v=6hVRlghL9XA) |
-| [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
+| [Week 01](./week-01/) | Getting Started with Harper | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/harper-fast-setup) |
+| [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Planned](https://img.shields.io/badge/status-planned-blue) | [Watch](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)  |
 | [Week 03](./week-03/) | Local vs Remote Deployments & Build Pipelines | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 | [Week 04](./week-04/) | TBD | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 
