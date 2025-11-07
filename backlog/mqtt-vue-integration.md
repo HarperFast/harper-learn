@@ -1,6 +1,4 @@
-# MQTT Integration with Vue.js
-
-# MQTT Integration with Vue.js
+# MQTT Integration with Vue.js - LED Sign Controller
 
 **Duration:** ~10 minutes • **Difficulty:** Intermediate
 
@@ -8,7 +6,16 @@
 
 ## Overview
 
-This episode brings IoT into the mix by leveraging Harper's built-in MQTT functionality with a Vue.js app. You'll learn how to use Harper's native MQTT support to send messages from your web application to control a real device, bridging the gap between web development and hardware. By the end, you'll have a working example of browser-to-device communication without any additional libraries.
+This episode brings IoT into the mix by building a Vue.js application that controls a physical LED sign through Harper's built-in MQTT broker. You'll learn how to use Harper's native MQTT support to create a web interface that sends real-time commands to hardware, demonstrating the power of bridging web development with IoT devices.
+
+**What we'll build:**
+- A Vue.js control panel running on Harper
+- Three MQTT topics: `power`, `brightness`, and `message`
+- Real-time LED sign control (power on/off, brightness adjustment, message updates)
+- Live message subscription showing what's currently displayed, even from other clients
+- LED sign configured to connect to Harper's MQTT broker
+
+By the end, you'll have a working multi-client system where multiple users can see and control the same LED sign in real-time.
 
 ---
 
@@ -19,35 +26,45 @@ This episode brings IoT into the mix by leveraging Harper's built-in MQTT functi
 - Today's focus: Adding MQTT to control devices
 - Demo preview: Sending messages from browser to device
 
-**[0:30-2:00] MQTT Basics & Harper's Built-in Support**
+**[0:30-2:00] MQTT Basics & Harper's Built-in Broker**
 - What is MQTT and why use it for IoT
 - Pub/sub pattern overview
-- Harper's native MQTT functionality (no libraries needed!)
+- Harper's built-in MQTT broker (no external broker needed!)
+- Topic structure: `power`, `brightness`, `message`
 
-**[2:00-4:30] Setting Up the Vue.js App**
-- Starting with a Vue.js app
-- Accessing Harper's MQTT API
-- Configuring MQTT connection through Harper
+**[2:00-3:30] Configuring the LED Sign**
+- Connecting LED sign to Harper's MQTT broker
+- Subscribing the sign to control topics
+- Testing basic connectivity with MQTT tools
 
-**[4:30-7:30] Building the Device Control Interface**
-- Creating UI controls in Vue
-- Using Harper's MQTT API to publish messages
-- Handling connection states and errors
+**[3:30-5:30] Building the Vue.js Control Panel**
+- Creating the UI: power toggle, brightness slider, message input
+- Publishing to MQTT topics through Harper's API
+- Real-time controls with no page refresh
 
-**[7:30-9:00] Testing with a Real Device**
-- Connecting to the device through Harper
-- Sending messages and observing device response
-- Debugging tips and common issues
+**[5:30-7:30] Adding Live Message Subscription**
+- Subscribing to the `message` topic in Vue
+- Displaying current LED sign content
+- Showing updates from other clients in real-time
+- Handling multi-client synchronization
+
+**[7:30-9:00] Testing the Full System**
+- Controlling the sign from the web interface
+- Demonstrating multi-client updates
+- Power cycling, brightness adjustment, message changes
+- Showing real-time sync across clients
 
 **[9:00-10:00] Wrap-up**
-- What we accomplished: browser to device control
-- Real-world applications of MQTT
+- What we accomplished: Full-stack IoT application with multi-client support
+- Real-world applications: digital signage, smart home controls, IoT dashboards
+- Why Harper's built-in MQTT broker simplifies IoT development
+- Next steps: Adding more devices, authentication, message history
 
 ---
 
 ## Key Learning Outcome
 
-✓ **Send MQTT messages from a web app to control IoT devices** — Learn to use Harper's built-in MQTT support in a Vue.js application to communicate with hardware devices in real-time using the publish-subscribe pattern.
+✓ **Build a full-stack IoT control system with real-time synchronization** — Learn to create a Vue.js application that controls physical hardware through Harper's built-in MQTT broker, implementing both publish and subscribe patterns for multi-client real-time updates.
 
 ---
 
@@ -59,15 +76,40 @@ This episode brings IoT into the mix by leveraging Harper's built-in MQTT functi
 - [Vue.js Documentation](https://vuejs.org/)
 
 **Tools Used:**
-- Harper CLI (with built-in MQTT support)
+- Harper CLI (with built-in MQTT broker)
 - Vue.js
-- IoT device with MQTT support
+- LED sign with MQTT client capability
+- MQTT testing tools (for initial setup)
 
 ---
 
 ## Prerequisites
 
-- Vue.js app deployed on Harper
-- Access to an IoT device with MQTT support
-- Basic understanding of asynchronous JavaScript
-- Harper installed with MQTT support enabled
+- Harper instance with MQTT broker enabled
+- LED sign with MQTT client support (or similar IoT device)
+- Basic understanding of Vue.js
+- Understanding of asynchronous JavaScript and event-driven architecture
+- Familiarity with pub/sub messaging patterns (helpful but not required)
+
+## Hardware Setup
+
+**LED Sign Requirements:**
+- MQTT client capability
+- WiFi connectivity
+- Configurable to connect to custom MQTT broker
+- Support for subscribing to topics
+
+**MQTT Topics:**
+- `led/power` - Controls on/off state (payload: "on" or "off")
+- `led/brightness` - Controls display brightness (payload: 0-100)
+- `led/message` - Controls displayed text (payload: string)
+
+## Demo Flow
+
+1. Configure LED sign to connect to Harper's MQTT broker
+2. Deploy Vue.js control panel to Harper
+3. Open control panel in browser
+4. Toggle power, adjust brightness, send messages
+5. Open second browser/device to demonstrate multi-client sync
+6. Show messages appearing on LED sign in real-time
+7. Update from second client and watch first client update automatically
