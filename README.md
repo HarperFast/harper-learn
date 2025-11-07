@@ -21,7 +21,7 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 | Week | Topic | Status | Watch |
 |------|-------|--------|-------|
 | [Week 01](./week-01/) | Getting Started with Harper | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/harper-fast-setup) |
-| [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Published](https://img.shields.io/badge/status-planned-blue) | [Watch](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)  |
+| [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)  |
 | [Week 03](./week-03/) | Local vs Remote Deployments & Build Pipelines | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 | [Week 04](./week-04/) | TBD | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
 
