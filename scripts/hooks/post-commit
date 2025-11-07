@@ -1,0 +1,102 @@
+#!/bin/bash
+
+# Git Hook: post-commit
+# Automatically syncs backlog changes to GitHub issues after commits
+# Also closes issues when commit message indicates completion
+
+# Get the commit message
+COMMIT_MSG=$(git log -1 --pretty=%B)
+
+# Check if commit message indicates completion
+# Patterns: "Finished X", "Completed X", "Done with X", "Published X"
+if echo "$COMMIT_MSG" | grep -qiE "(finished|completed|done with|published|shipped)"; then
+  echo ""
+  echo "🎯 Commit message indicates completion, checking for backlog items to close..."
+  echo ""
+
+  # Extract potential episode/backlog names from commit message
+  # Look for common patterns like "Finished MQTT episode", "Completed BigQuery integration", etc.
+
+  # Get all synced backlog files
+  if [ -f "backlog/.sync-metadata.json" ]; then
+    # Try to find matching backlog items by searching for keywords in the commit message
+    # This will look for any word in the commit that might match a backlog file
+
+    # Get list of all backlog files (without .md extension for matching)
+    for BACKLOG_FILE in backlog/*.md; do
+      if [ "$BACKLOG_FILE" = "backlog/README.md" ]; then
+        continue
+      fi
+
+      FILENAME=$(basename "$BACKLOG_FILE")
+      # Remove extension and convert dashes to spaces for matching
+      TOPIC=$(echo "$FILENAME" | sed 's/\.md$//' | tr '-' ' ')
+
+      # Check if any word from the topic appears in the commit message (case insensitive)
+      if echo "$COMMIT_MSG" | grep -qiE "$TOPIC"; then
+        echo "📌 Found matching backlog item: $FILENAME"
+
+        # Get issue number from metadata for confirmation
+        ISSUE_NUMBER=$(node -e "
+          const fs = require('fs');
+          try {
+            const metadata = JSON.parse(fs.readFileSync('backlog/.sync-metadata.json', 'utf8'));
+            const data = metadata['$FILENAME'];
+            if (data && data.issueNumber && !data.closed) {
+              console.log(data.issueNumber);
+            }
+          } catch (e) {}
+        ")
+
+        if [ -n "$ISSUE_NUMBER" ]; then
+          REPO=$(gh repo view --json nameWithOwner -q .nameWithOwner 2>/dev/null)
+          ISSUE_URL="https://github.com/$REPO/issues/$ISSUE_NUMBER"
+
+          echo ""
+          echo "   This will close issue #$ISSUE_NUMBER"
+          echo "   View at: $ISSUE_URL"
+          echo ""
+          echo -n "   Close this issue? (y/N): "
+          read -r RESPONSE
+
+          if [ "$RESPONSE" = "y" ] || [ "$RESPONSE" = "Y" ]; then
+            echo ""
+            echo "   Closing issue #$ISSUE_NUMBER..."
+            node scripts/sync-backlog.js close "$FILENAME"
+            echo ""
+          else
+            echo "   Skipped closing issue #$ISSUE_NUMBER"
+            echo ""
+          fi
+        fi
+      fi
+    done
+  fi
+fi
+
+# Check if any backlog files were modified in the last commit
+BACKLOG_CHANGES=$(git diff-tree --no-commit-id --name-only -r HEAD | grep '^backlog/.*\.md$' | grep -v 'backlog/README\.md')
+
+if [ -n "$BACKLOG_CHANGES" ]; then
+  echo ""
+  echo "📋 Backlog changes detected in commit, syncing with GitHub issues..."
+  echo ""
+
+  # Run the sync script
+  node scripts/sync-backlog.js push
+fi
+
+# Check if any backlog files were deleted
+DELETED_FILES=$(git diff-tree --no-commit-id --name-only --diff-filter=D -r HEAD | grep '^backlog/.*\.md$' | grep -v 'backlog/README\.md')
+
+if [ -n "$DELETED_FILES" ]; then
+  echo ""
+  echo "⚠️  Deleted backlog files detected:"
+  echo "$DELETED_FILES"
+  echo ""
+  echo "💡 Consider closing the corresponding GitHub issues manually or run:"
+  echo "   node scripts/sync-backlog.js close-deleted"
+  echo ""
+fi
+
+exit 0

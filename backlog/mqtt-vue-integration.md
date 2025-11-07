@@ -1,5 +1,7 @@
 # MQTT Integration with Vue.js
 
+# MQTT Integration with Vue.js
+
 **Duration:** ~10 minutes • **Difficulty:** Intermediate
 
 ---

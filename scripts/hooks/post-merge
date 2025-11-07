@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Git Hook: post-merge
+# Automatically pulls GitHub issue updates after merging/pulling
+
+# Check if merge was successful
+if [ $? -ne 0 ]; then
+  exit 0
+fi
+
+# Check if any backlog metadata was updated (indicating remote changes)
+METADATA_CHANGED=$(git diff-tree --no-commit-id --name-only -r HEAD | grep 'backlog/.sync-metadata.json')
+
+if [ -n "$METADATA_CHANGED" ]; then
+  echo ""
+  echo "📥 Backlog metadata updated from remote, pulling latest issue updates..."
+  echo ""
+
+  # Run the pull sync
+  node scripts/sync-backlog.js pull
+
+  echo ""
+fi
+
+exit 0
