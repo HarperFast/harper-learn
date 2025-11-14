@@ -4,9 +4,10 @@
 
 ---
 
-## 📺 Watch On
+## 📺 Watch
 
-- **[YouTube](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)** — Primary platform
+[<img src="https://cdn.prod.website-files.com/68bf31b0ba9419cc225e840b/690d1c4786bb5ab6001ec61f_HL-%20E2.jpg" alt="Local Instances on Fabric – Basic App Setup" width="800"/>](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)
+
 
 ---
 
