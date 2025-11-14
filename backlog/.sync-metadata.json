@@ -1,50 +1,62 @@
 {
   "mqtt-vue-integration.md": {
     "issueNumber": 1,
-    "lastSync": "2025-11-07T22:41:23.714Z"
+    "lastSync": "2025-11-13T20:48:39.799Z"
   },
   "bigquery-plugin-deep-dive.md": {
     "issueNumber": 2,
-    "lastSync": "2025-11-07T22:41:11.066Z"
+    "lastSync": "2025-11-13T20:48:28.955Z"
   },
   "bigquery-plugin-parallelism.md": {
     "issueNumber": 3,
-    "lastSync": "2025-11-07T22:41:12.607Z"
+    "lastSync": "2025-11-13T20:48:29.913Z"
   },
   "harper-plugin-template.md": {
     "issueNumber": 4,
-    "lastSync": "2025-11-07T22:41:21.331Z"
+    "lastSync": "2025-11-13T20:48:36.635Z"
   },
   "inferencing-at-edge.md": {
     "issueNumber": 5,
-    "lastSync": "2025-11-07T22:41:22.439Z"
+    "lastSync": "2025-11-13T20:48:37.624Z"
   },
   "pubsub-use-case.md": {
     "issueNumber": 6,
-    "lastSync": "2025-11-07T22:41:24.932Z"
+    "lastSync": "2025-11-13T20:48:43.190Z"
   },
   "vector-index-semantic-cache.md": {
     "issueNumber": 7,
-    "lastSync": "2025-11-07T22:41:26.287Z"
+    "lastSync": "2025-11-13T20:48:44.251Z"
   },
   "guest-dawson-toth-fabric.md": {
     "issueNumber": 8,
-    "lastSync": "2025-11-07T22:41:15.743Z"
+    "lastSync": "2025-11-13T20:48:32.372Z"
   },
   "guest-ethan-arrowood-plugin-system.md": {
     "issueNumber": 9,
-    "lastSync": "2025-11-07T22:41:16.890Z"
+    "lastSync": "2025-11-13T20:48:33.227Z"
   },
   "guest-nathan-heskew-oauth-plugin.md": {
     "issueNumber": 10,
-    "lastSync": "2025-11-07T22:41:20.136Z"
+    "lastSync": "2025-11-13T20:48:35.539Z"
   },
   "geohashing-location-data.md": {
     "issueNumber": 11,
-    "lastSync": "2025-11-07T22:41:13.884Z"
+    "lastSync": "2025-11-13T20:48:31.361Z"
   },
   "guest-kris-zyp-kyle-5.0-preview.md": {
     "issueNumber": 12,
-    "lastSync": "2025-11-07T22:41:18.541Z"
+    "lastSync": "2025-11-13T20:48:34.319Z"
+  },
+  "operations-api.md": {
+    "issueNumber": 13,
+    "lastSync": "2025-11-13T20:48:40.848Z"
+  },
+  "plugin-testharness-application.md": {
+    "issueNumber": 14,
+    "lastSync": "2025-11-13T20:48:41.908Z"
+  },
+  "logging-and-telemetry.md": {
+    "issueNumber": 15,
+    "lastSync": "2025-11-13T20:48:38.873Z"
   }
 }
