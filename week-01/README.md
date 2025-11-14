@@ -4,10 +4,10 @@
 
 ---
 
-## 📺 Watch On
+## 📺 Watch
 
-- **[YouTube](https://www.youtube.com/watch?v=6hVRlghL9XA)** — Primary platform
-- **[Additional Platform]** — Coming soon
+[<img src="https://cdn.prod.website-files.com/68bf31b0ba9419cc225e840b/68ffe676cba0149d459717d7_Harper%20Fast%20Setup.png" alt="Harper Fast Setup" width="800"/>](https://www.harper.fast/resources/harper-fast-setup)
+
 
 ---
 
@@ -15,19 +15,6 @@
 
 Welcome to the first episode of Harper Learn! In this focused session, we go from zero to having Harper installed and connected to Fabric. This is a hands-on introduction designed to get you up and running quickly—no prior Harper experience needed.
 
----
-
-## Talk Track
-
-**[0:00-0:45] Introduction**
-
-**[0:45-3:30] Installing Harper**
-
-**[3:30-7:00] Creating Your First Cluster in Fabric**
-
-**[7:00-9:00] Connecting Local Clusters to Fabric**
-
-**[9:00-10:00] Wrap-up**
 
 ---
 
@@ -39,13 +26,11 @@ Welcome to the first episode of Harper Learn! In this focused session, we go fro
 
 ## Timestamps
 
-> *Will be added after video is published*
-
-- `00:00` — Introduction
-- `00:00` — Installing Harper
-- `00:00` — Creating a cluster in Fabric
-- `00:00` — Connecting local to Fabric
-- `00:00` — Wrap-up
+- 00:00 Introduction to Harper and Its Capabilities
+- 01:55 Installing Harper and Setting Up Fabric
+- 04:23 Creating and Managing Clusters in Harper
+- 07:11 Connecting Local Instances to Fabric
+- 09:56 Recap and Future Plans for Development
 
 ---
 
