@@ -4,45 +4,15 @@
 
 ---
 
-## 📺 Watch On
+## 📺 Watch
 
-- **[YouTube](https://youtube.com/watch?v=VIDEO_ID)** — Primary platform
-- **[Additional Platform]** — Coming soon
+[<img src="https://cdn.prod.website-files.com/68bf31b0ba9419cc225e840b/69174ece084590bc8bab2afd_Ivan%20Week%203%20(1).jpg" alt="From Local to Distributed Multi-Node Cluster in Minutes" width="800"/>](https://www.harper.fast/resources/from-local-to-distributed-multi-node-cluster-in-minutes)
 
 ---
 
 ## Overview
 
 This week we dive deeper into practical Harper deployment workflows. We'll start with a quick review of managing Harper installations locally (nvm vs oh-my-zsh), then explore deploying a simple static app both locally and remotely. Finally, we'll tackle a more realistic scenario: deploying a Vue.js application that requires a build step.
-
----
-
-## Talk Track
-
-**[0:00-0:30] Introduction**
-
-**[0:30-2:30] Managing Harper Installations Locally**
-- Quick review: nvm vs oh-my-zsh approaches
-- Best practices for local development environments
-- Switching between Harper versions
-
-**[2:30-5:00] Deploying a Simple Static App Locally**
-- Review of the simple static app from Week 02
-- Deploying to local Harper instance
-- Testing and verifying the deployment
-
-**[5:00-7:30] Deploying the Static App Remotely**
-- Same app, remote deployment to Fabric
-- Differences between local and remote workflows
-- Viewing the live deployment
-
-**[7:30-9:30] Building and Deploying a Vue.js App**
-- Introduction to apps with build steps
-- Running npm build locally
-- Deploying the built output to Harper
-- Common gotchas and troubleshooting
-
-**[9:30-10:00] Wrap-up**
 
 ---
 
@@ -54,14 +24,12 @@ This week we dive deeper into practical Harper deployment workflows. We'll start
 
 ## Timestamps
 
-> *Will be added after video is published*
-
-- `00:00` — Introduction
-- `00:00` — Managing Harper Installations Locally (nvm vs oh-my-zsh)
-- `00:00` — Deploying a Simple Static App Locally
-- `00:00` — Deploying the Static App Remotely to Fabric
-- `00:00` — Building and Deploying a Vue.js App
-- `00:00` — Wrap-up
+- 00:00 Introduction to Harper and Its Applications
+- 00:21 Deploying Static Applications with Harper
+- 05:42 Introduction to Deployment Challenges
+- 13:11 Building a Simple Vue.js App
+- 14:35 Real-Time Messaging with MQTT
+- 15:04 Community Engagement and Future Topics
 
 ---
 
@@ -74,7 +42,7 @@ This week we dive deeper into practical Harper deployment workflows. We'll start
 - [oh-my-zsh](https://ohmyz.sh/)
 
 **Community:**
-- [Discord Community](https://discord.gg/89sbtZTd)
+- [Discord Community](https://harper.fast/discord)
 - [GitHub Repository](https://github.com/your-username/harper-learn)
 
 **Tools Used:**
@@ -96,7 +64,7 @@ This week we dive deeper into practical Harper deployment workflows. We'll start
 
 ## Discussion & Feedback
 
-**Quick questions?** Join the [Discord](https://discord.gg/89sbtZTd) for real-time help
+**Quick questions?** Join the [Discord](https://harper.fast/discord) for real-time help
 **Episode feedback?** [Submit via GitHub](../../issues/new?template=feedback.yml)
 **Topic suggestions?** [Request a topic](../../issues/new?template=topic-request.yml)
 
