@@ -1,13 +1,12 @@
 # Week 04: Ingesting Data from BigQuery to Harper
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Intermediate
+**Published:** November 21, 2025 • **Duration:** ~13 minutes • **Difficulty:** Intermediate
 
 ---
 
 ## 📺 Watch On
 
-- **[YouTube](https://youtube.com/watch?v=VIDEO_ID)** — Primary platform
-- **[Additional Platform]** — Coming soon
+[<img src="https://cdn.prod.website-files.com/68bf31b0ba9419cc225e840b/691f93559d66838a4e6c2785_Thumbnail.jpg" alt="Cut Redis. Keep Speed." width="800"/>](https://www.harper.fast/resources/bigquery-to-harper-real-time-data-access-without-redis-or-custom-apis)
 
 ---
 
@@ -66,15 +65,12 @@ This week we tackle a real-world data integration challenge: moving data from Go
 
 ## Timestamps
 
-> *Will be added after video is published*
-
-- `00:00` — Introduction
-- `00:00` — Whiteboard: Understanding the Problem
-- `00:00` — Building a Synthetic Data Generator
-- `00:00` — Exploring BigQuery
-- `00:00` — Building the Ingestor
-- `00:00` — Testing & Verifying Data
-- `00:00` — Wrap-up
+- `00:00` Introduction to Harper and Project Overview
+- `00:58` Understanding the Data Flow and ETL Process
+- `03:48` Building the Synthetic Data Generator
+- `04:04` Exploring the Plugin and Code Structure
+- `08:24` Demonstrating Data Retrieval and Management
+- `10:41` Future Enhancements and Community Engagement
 
 ---
 
