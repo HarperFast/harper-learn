@@ -1,6 +1,6 @@
 # Week 02: Installing Harper the Right Way & Your First Static Site
 
-**Published:** 11/7/25 • **Duration:** 13 minutes • **Difficulty:** Beginner
+**Published:** November 7, 2025 • **Duration:** 13 minutes • **Difficulty:** Beginner
 
 ---
 
