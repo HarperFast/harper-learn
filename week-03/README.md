@@ -1,6 +1,6 @@
 # Week 03: Local vs Remote Deployments & Build Pipelines
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Beginner to Intermediate
+**Published:** November 14, 2025 • **Duration:** ~16 minutes • **Difficulty:** Beginner to Intermediate
 
 ---
 
