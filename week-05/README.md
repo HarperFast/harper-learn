@@ -16,12 +16,6 @@ Learn how to set up Harper locally using Docker and monitor everything with Graf
 
 ---
 
-## Key Learning Outcome
-
-✓ **Master Harper plugin development** — Learn to build production-ready Harper plugins with custom middleware, authentication, logging, and custom endpoints, and test them with a complete skeleton application.
-
----
-
 ## Timestamps
 
 - `00:00` Introduction to Harper and Developer Experience
