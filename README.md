@@ -24,7 +24,7 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 | [Week 02](./week-02/) | Installing Harper the Right Way & Your First Static Site | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/local-instances-on-fabric-basic-app-setup)  |
 | [Week 03](./week-03/) | Local vs Remote Deployments & Build Pipelines | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/from-local-to-distributed-multi-node-cluster-in-minutes)   |
 | [Week 04](./week-04/) | Ingesting Data from BigQuery to Harper | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/bigquery-to-harper-real-time-data-access-without-redis-or-custom-apis) |
-| [Week 05](./week-05/) | TBD | ![Planned](https://img.shields.io/badge/status-planned-blue) | — |
+| [Week 05](./week-05/) | Getting Started (Harper + Grafana) | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/harper-docker-grafana-local-setup-guide) |
 
 > **Note:** This series is ongoing! New episodes are added regularly based on community feedback and my learning progression.
 
