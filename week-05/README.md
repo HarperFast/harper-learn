@@ -1,53 +1,121 @@
-# Week 05: Building Harper Plugins - Deep Dive
+# Week 05: Local Harper Development - Zero to Deployed
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Intermediate to Advanced
+**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Beginner to Intermediate
 
 ---
 
 ## 📺 Watch On
 
-[<img src="https://cdn.prod.website-files.com/68bf31b0ba9419cc225e840b/692f65cc35697d05356e40e4_Episode%205.jpg" alt="Live in minutes. Harper + Docker + Grafana: Local Setup Guide" width="800"/>](https://www.harper.fast/resources/harper-docker-grafana-local-setup-guide)
+- **[YouTube](https://youtube.com/watch?v=VIDEO_ID)** — Primary platform
+- **[Additional Platform]** — Coming soon
 
 ---
 
 ## Overview
 
-Learn how to set up Harper locally using Docker and monitor everything with Grafana. This step-by-step walkthrough shows developers how to launch single-node and clustered Harper environments, deploy the application template, and start building fast. Perfect for anyone exploring high-performance development with Harper’s distributed platform.
+This episode takes you from nothing to a complete local Harper development workflow. You'll learn how to use Docker Compose to run Harper locally (both single instance and clustered), clone and deploy a real application template, and verify everything works. By the end, you'll understand the complete development workflow from zero to deployed application on Harper—whether you're brand new to Harper or have been following along from Week 01.
+
+---
+
+## Talk Track
+
+**[0:00-1:00] Introduction**
+- Why local development matters: fast iteration, no cloud costs, learn safely
+- What we're building: Two repositories working together
+- What you'll accomplish: Deploy the same app to single instance, then to a 3-node cluster
+
+**[1:00-3:30] Getting the Infrastructure Repository**
+- Navigate to [harper-getting-started](https://github.com/irjudson/harper-getting-started)
+- Clone the repository
+- Quick tour of the repo structure:
+  - `docker-compose-single.yml` - Single Harper instance
+  - `docker-compose-cluster.yml` - 3-node cluster
+  - `docker-compose-grafana.yml` - Performance monitoring (future episode)
+
+**[3:30-5:00] Launching Single Instance**
+- Run `docker-compose -f docker-compose-single.yml up`
+- Watch Harper start up
+- Verify it's running and ready for deployment
+- Explain ports, volumes, and configuration
+
+**[5:00-6:30] Getting and Building the Application**
+- Navigate to [application-template](https://github.com/HarperFast/application-template)
+- Clone the repository
+- Quick tour of the template structure
+- Build the application
+
+**[6:30-7:30] Deploying to Single Instance**
+- Deploy the built application to the running single instance
+- Verify deployment succeeded
+- Test the application and show it working
+
+**[7:30-8:30] Scaling to a Cluster**
+- Tear down the single instance: `docker-compose -f docker-compose-single.yml down`
+- Stand up the 3-node cluster: `docker-compose -f docker-compose-cluster.yml up`
+- Watch the cluster form
+
+**[8:30-9:30] Deploying to the Cluster**
+- Deploy the same application to the cluster
+- Verify deployment across nodes
+- Test the application running on the cluster
+- Show it working the same way
+
+**[9:30-10:00] Wrap-up**
+- What we built: Complete local development workflow
+- Single instance for quick iteration, cluster for testing distributed scenarios
+- Next steps: Grafana monitoring (future episode), building your own applications
+- You now have everything you need to develop Harper applications locally
+
+---
+
+## Key Learning Outcome
+
+✓ **Master the complete Harper development workflow** — From zero to deployed application on both single instance and clustered Harper environments using Docker, with real application templates ready for your own development.
 
 ---
 
 ## Timestamps
 
-- `00:00` Introduction to Harper and Developer Experience
-- `02:46` Setting Up Harper Locally with Docker
-- `05:49` Deploying Applications on Harper
-- `08:51` Building a Cluster with Harper Instances
-- `10:30` Troubleshooting and Configuration Issues
-- `11:04` Conclusion and Acknowledgments
+> *Will be added after video is published*
+
+- `00:00` — Introduction
+- `01:00` — Getting the Infrastructure Repository
+- `03:30` — Launching Single Instance
+- `05:00` — Getting and Building the Application
+- `06:30` — Deploying to Single Instance
+- `07:30` — Scaling to a Cluster
+- `08:30` — Deploying to the Cluster
+- `09:30` — Wrap-up
 
 ---
 
 ## Resources & Links
 
+**Repositories:**
+- [harper-getting-started](https://github.com/irjudson/harper-getting-started) — Docker infrastructure for local Harper development
+- [application-template](https://github.com/HarperFast/application-template) — Starter application template for Harper
+
 **Documentation:**
-- [Harper Plugin API Documentation](https://docs.harperdb.io/docs/developers/custom-functions)
-- [Harper Component Instances](https://docs.harperdb.io/docs/developers/components)
-- [Harper Request Lifecycle](https://docs.harperdb.io/docs/developers/request-lifecycle)
+- [Harper Official Documentation](https://docs.harperdb.io/)
+- [Docker Compose Documentation](https://docs.docker.com/compose/)
 
 **Community:**
 - [Discord Community](https://discord.gg/kfYmMTXc9b)
 - [GitHub Repository](https://github.com/HarperFast/harper-learn)
 
+**Tools Used:**
+- Docker & Docker Compose
+- Git
+- Harper CLI
 
 ---
 
 ## Prerequisites
 
-- Completion of Week 04
-- Understanding of JavaScript/Node.js modules
-- Familiarity with middleware patterns
-- Basic understanding of HTTP request/response cycle
-- Harper instance running locally
+- Docker installed and running
+- Git installed
+- Basic command-line familiarity
+- No prior Harper experience required (but Weeks 01-04 provide helpful context)
 
 ---
 
@@ -59,7 +127,7 @@ Learn how to set up Harper locally using Docker and monitor everything with Graf
 
 ---
 
-**Next Episode:** Week 06 — [Topic TBD]
+**Next Episode:** Week 06 — Building Harper Plugins - Deep Dive
 
 ---
 
