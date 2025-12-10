@@ -25,6 +25,8 @@ Each week, I explore a new aspect of Harper through hands-on projects and real-w
 | [Week 03](./week-03/) | Local vs Remote Deployments & Build Pipelines | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/from-local-to-distributed-multi-node-cluster-in-minutes)   |
 | [Week 04](./week-04/) | Ingesting Data from BigQuery to Harper | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/bigquery-to-harper-real-time-data-access-without-redis-or-custom-apis) |
 | [Week 05](./week-05/) | Getting Started (Harper + Grafana) | ![Published](https://img.shields.io/badge/status-published-success) | [Watch](https://www.harper.fast/resources/harper-docker-grafana-local-setup-guide) |
+| [Week 06](./week-06/) | Intro to MQTT & Harper | ![In Progress](https://img.shields.io/badge/status-in%20progress-yellow) | Coming Soon |
+| [Week 07](./week-07/) | MQTT in Harper - Real-Time Messaging | ![Planned](https://img.shields.io/badge/status-planned-lightgrey) | Coming Soon |
 
 > **Note:** This series is ongoing! New episodes are added regularly based on community feedback and my learning progression.
 

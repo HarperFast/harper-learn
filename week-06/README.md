@@ -1,6 +1,6 @@
-# Week 06: MQTT in Harper - Real-Time Messaging
+# Week 06: Intro to MQTT & Harper
 
-**Published:** [Date TBD] • **Duration:** ~10 minutes • **Difficulty:** Intermediate
+**Published:** [Date TBD] • **Duration:** ~10-11 minutes • **Difficulty:** Beginner
 
 ---
 
@@ -13,71 +13,88 @@
 
 ## Overview
 
-This week we explore MQTT integration in Harper. You'll learn how to use Harper's built-in MQTT broker to enable real-time messaging and pub/sub patterns in your applications. We'll cover connecting to Harper's MQTT broker, publishing messages, subscribing to topics, and building a real-time data pipeline that combines MQTT with Harper's database capabilities.
+This week we introduce MQTT and explore how Harper supports real-time messaging out of the box. You'll learn the fundamentals of MQTT, why it matters for modern applications, and how Harper's built-in capabilities make it easy to add pub/sub messaging to your projects without external dependencies.
 
 ---
 
 ## Talk Track
 
-**[0:00-0:30] What is MQTT?**
-- MQTT protocol overview and lightweight pub/sub messaging
-- Reference mqtt.org for complete protocol specification
-- MQTT finding a renaissance in AI Ops - pushing edge telemetry back to datacenter
-- But: Harper's native replication does it faster with less overhead when you inference *in* Harper *at* the edge
-- Still, MQTT matters for interop with standard IoT/edge devices
+**[0:00-1:00] What is MQTT and Why It Matters**
+- MQTT = OASIS standard messaging protocol for the Internet of Things (per mqtt.org)
+- Extremely lightweight publish/subscribe messaging transport
+- Designed for resource-constrained devices and unreliable networks
+- Small client footprint - runs on microcontrollers
+- Scales to millions of IoT devices
+- Common use cases: automotive, manufacturing, telecommunications, oil/gas, smart homes, AI Ops
+- Three QoS levels for reliability, TLS encryption, persistent sessions
 
-**[0:30-2:30] Harper's Real-Time Messaging Support**
-- Harper's built-in real-time messaging capabilities
-- Harper acts as an MQTT broker - no external broker needed
+**[1:00-2:30] The Traditional MQTT Stack - Clients, Brokers, Topics**
+- Reference: mqtt.org for complete architecture
+- **Clients**: Publishers (send messages) and Subscribers (receive messages)
+  - Bidirectional communication - a client can be both publisher and subscriber
+- **Brokers**: Intermediaries that route messages between clients
+  - Examples: Mosquitto, HiveMQ, EMQX
+  - Manages connections, topic subscriptions, message delivery
+- **Topics**: Organize messages by category (like file paths: `sensors/temperature/room1`)
+  - Subscribers filter what messages they receive based on topics
+  - Decoupled architecture: publishers don't know who's subscribing
+- Traditional deployment: Separate broker + database + application logic = multiple services to coordinate
+
+**[2:30-4:00] Harper's Native MQTT Capabilities**
+- Harper is a fully integrated microlith - all in a 100MB process:
+  - Database (SQL + NoSQL)
+  - Messaging (including MQTT broker)
+  - Caching
+  - Application hosting
+- MQTT broker is built-in - no external services needed
+- Acts as broker AND database simultaneously
 - Reference: https://docs.harperdb.io/docs/developers/real-time
-- MQTT basics in Harper: topics, publish/subscribe pattern, QoS levels
-- Enabling and configuring Harper's MQTT broker
+- Traditional stack: Multiple services, multiple failure points, multiple configs
+- Harper: One process, one config, one service to manage
+- Messages can be persisted to database - no glue code required
 
-**[2:30-5:00] Whiteboard: Mapping MQTT Topics to Database Structure**
-- [Switch to second camera/paper & pen]
-- MQTT topics are hierarchical (e.g., sensors/temperature/room1)
-- Harper is a database - how do we map topics to tables?
-- Pattern: Create a topics table with one row per topic
-- Harper's advantage: messages column can accumulate all messages without breaking schema
-- Drawing the data model: topics table → messages array
-- Why this works: Harper's flexible schema handles growing message arrays
+**[4:00-5:00] Harper's MQTT Configuration**
+- Review harperdb-config.yaml to show MQTT settings
+- MQTT is enabled by default in Harper
+- Default port: 1883 (standard MQTT port)
+- Show where MQTT broker configuration lives
+- No complex broker setup - just standard Harper config
 
-**[5:00-7:30] Enabling MQTT and Testing Connections**
-- [Back to main camera/screen]
-- MQTT is disabled by default - must be explicitly enabled
-- Demonstrating connection failure without MQTT enabled
-- Configuring Harper to enable MQTT broker
-- Testing with MQTT Explorer: connecting to test.mosquitto.org (works)
-- Testing with MQTT Explorer: connecting to Harper localhost (enabled but...)
-- It's not quite working with open tools yet - something's missing
-- Understanding why standard MQTT tools struggle with Harper's broker
+**[5:00-7:00] Demo Part 1: Publisher & Subscriber Without Message Retention**
+- Connect MQTT Explorer (or similar client) to Harper localhost:1883
+- Open Harper Studio/UI to watch the database table in real-time
+- Publisher sends messages to topic: `demo/test`
+- Subscriber receives messages live
+- Messages flow through broker but are NOT retained
+- Show: No messages stored in Harper's table
+- This is standard MQTT behavior - messages are ephemeral
 
-**[7:30-9:00] Putting in the Batteries: mqtt-broker-interop-plugin**
-- Harper's MQTT implementation is optimized for Harper-to-Harper communication
-- Standard MQTT tools need the interop plugin for compatibility
-- Installing and configuring mqtt-broker-interop-plugin
-- Reconnecting with MQTT Explorer - now it works!
-- Publishing and subscribing with standard MQTT tools
-- Understanding when you need the interop plugin vs native Harper MQTT
+**[7:00-9:00] Demo Part 2: Publisher & Subscriber WITH Message Retention**
+- Enable message retention/persistence configuration
+- Publisher sends messages to topic: `demo/sensor/temperature`
+- Subscriber receives messages as before
+- Switch to Harper table view - messages ARE being stored!
+- Show: Each message appears in the Harper database table
+- Query the messages with SQL while publisher is still sending
+- Real-time messaging + automatic persistence
+- No glue code, no separate storage layer - it just works
 
-**[9:00-9:30] Real Device Demo: Off-the-Shelf MQTT Device**
-- Connecting an actual MQTT device to Harper
-- Device publishes messages to its topic
-- Checking Harper's topics table - the device appears!
-- Viewing the accumulated messages in the messages column
-- From edge device to database in real-time
+**[9:00-10:00] What Just Happened?**
+- Harper acted as MQTT broker (handled pub/sub)
+- Harper simultaneously stored messages to database
+- Same topic hierarchy visible in both MQTT client and database
+- Query messages immediately with SQL or NoSQL APIs
+- One system, dual purpose: messaging + storage
 
-**[9:30-10:00] Wrap-up**
-- What we built: MQTT broker + database integration
-- Harper as both message broker and data store
-- Best practices for MQTT in production
-- Next steps: Building real-time AI Ops pipelines
+**[10:00-10:30] Wrap-up & Next Steps**
+- What we learned: MQTT fundamentals and Harper's integrated approach
+- Benefits: simplified architecture, less infrastructure, automatic persistence
 
 ---
 
 ## Key Learning Outcome
 
-✓ **Master MQTT in Harper** — Learn to leverage Harper's built-in MQTT broker to build real-time messaging systems, integrate pub/sub patterns with database storage, and create scalable real-time data pipelines.
+✓ **Understand MQTT and Harper's Real-Time Messaging** — Learn what MQTT is, why it's useful, and how Harper's built-in MQTT broker simplifies your architecture by combining messaging and database in one system.
 
 ---
 
@@ -85,47 +102,40 @@ This week we explore MQTT integration in Harper. You'll learn how to use Harper'
 
 > *Will be added after video is published*
 
-- `00:00` — What is MQTT?
-- `00:30` — Harper's Real-Time Messaging Support
-- `02:30` — Whiteboard: Mapping MQTT Topics to Database Structure
-- `05:00` — Enabling MQTT and Testing Connections
-- `07:30` — Putting in the Batteries: mqtt-broker-interop-plugin
-- `09:00` — Real Device Demo: Off-the-Shelf MQTT Device
-- `09:30` — Wrap-up
+- `00:00` — What is MQTT and Why It Matters
+- `01:00` — The Traditional MQTT Stack - Clients, Brokers, Topics
+- `02:30` — Harper's Native MQTT Capabilities
+- `04:00` — Harper's MQTT Configuration
+- `05:00` — Demo Part 1: Publisher & Subscriber Without Message Retention
+- `07:00` — Demo Part 2: Publisher & Subscriber WITH Message Retention
+- `09:00` — What Just Happened?
+- `10:00` — Wrap-up & Next Steps
 
 ---
 
 ## Resources & Links
 
 **Documentation:**
+- [Harper Real-Time Documentation](https://docs.harperdb.io/docs/developers/real-time)
+- [MQTT Protocol Overview](https://mqtt.org/)
 - [Harper MQTT Documentation](https://docs.harperdb.io/docs/developers/mqtt)
-- [MQTT Protocol Specification](https://mqtt.org/mqtt-specification/)
-- [Harper Real-Time Features](https://docs.harperdb.io/docs/developers/real-time)
 
 **Community:**
 - [Discord Community](https://discord.gg/kfYmMTXc9b)
 - [GitHub Repository](https://github.com/HarperFast/harper-learn)
 
 **Tools Used:**
-- Harper CLI
-- MQTT.js (Node.js client)
+- Harper instance
 - MQTT Explorer (for testing)
-- Node.js & npm
-
-**Example Code:**
-- [mqtt-publisher/](mqtt-publisher/) — Publishing example
-- [mqtt-subscriber/](mqtt-subscriber/) — Subscribing example
-- [realtime-pipeline/](realtime-pipeline/) — Complete pipeline
+- Web browser
 
 ---
 
 ## Prerequisites
 
 - Completion of Week 05
-- Understanding of asynchronous JavaScript
-- Basic knowledge of pub/sub patterns
 - Harper instance running locally
-- Node.js installed
+- Basic understanding of client-server architecture
 
 ---
 
@@ -137,7 +147,7 @@ This week we explore MQTT integration in Harper. You'll learn how to use Harper'
 
 ---
 
-**Next Episode:** Week 07 — [Topic TBD]
+**Next Episode:** Week 07 — MQTT in Harper - Real-Time Messaging
 
 ---
 
