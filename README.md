@@ -1,11 +1,11 @@
 > [!IMPORTANT]
 > **This repository is archived and read-only.**
 >
-> It's a snapshot to the content contained within.
+> It's a point-in-time snapshot built to accompany [From Local to Distributed Multi-Node Cluster in Minutes](https://www.harper.fast/resources/from-local-to-distributed-multi-node-cluster-in-minutes).
 > It is pinned to **HarperDB v4** and is preserved for reference.
 > It is **not** kept in sync with current releases and may not be supported in latest Harper versions.
 >
-> For up-to-date guides and reference docs, see the [Harper docs](https://docs.harperdb.io) and join our [Discord](https://discord.com/invite/VzZuaw3Xay).
+> For up-to-date guides and reference docs, see the [Harper docs](https://docs.harper.fast) and join our [Discord](https://harper.fast/discord).
 
 # Harper Learn
 
